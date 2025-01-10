@@ -1,0 +1,44 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    registration_date DATE NOT NULL
+);
+
+
+
+INSERT INTO users (name, age, address, phone_number, email, registration_date) VALUES
+('John Doe', 30, '123 Elm St, Springfield', '9876543210', 'john.doe@example.com', '2025-01-01'),
+('Alice Smith', 28, '456 Maple Ave, Rivertown', '8765432109', 'alice.smith@example.com', '2025-01-02'),
+('Bob Johnson', 45, '789 Oak Blvd, Lakeland', '7654321098', 'bob.johnson@example.com', '2025-01-03'),
+('Sarah Brown', 34, '101 Pine Rd, Brookfield', '6543210987', 'sarah.brown@example.com', '2025-01-04'),
+('Michael Lee', 29, '202 Birch St, Greenfield', '5432109876', 'michael.lee@example.com', '2025-01-05'),
+('Emily Davis', 26, '303 Cedar Ave, Hillcrest', '4321098765', 'emily.davis@example.com', '2025-01-06'),
+('David Miller', 40, '404 Ash Dr, Sunnyvale', '3210987654', 'david.miller@example.com', '2025-01-07'),
+('Jessica Wilson', 22, '505 Palm St, Bayside', '2109876543', 'jessica.wilson@example.com', '2025-01-08'),
+('James Moore', 38, '606 Walnut Ct, Riverbank', '1987654321', 'james.moore@example.com', '2025-01-09'),
+('Laura Taylor', 32, '707 Fir Ln, Meadowbrook', '1234567890', 'laura.taylor@example.com', '2025-01-10'),
+('Andrew White', 27, '808 Cypress St, Elmwood', '2345678901', 'andrew.white@example.com', '2025-01-10'),
+('Olivia Harris', 24, '909 Redwood Rd, Pineville', '3456789012', 'olivia.harris@example.com', '2025-01-10'),
+('Ethan Clark', 31, '111 Chestnut Blvd, Willow', '4567890123', 'ethan.clark@example.com', '2025-01-10'),
+('Grace Martin', 36, '222 Spruce Ln, Riverdale', '5678901234', 'grace.martin@example.com', '2025-01-10'),
+('Noah Allen', 41, '333 Poplar Dr, Fairview', '6789012345', 'noah.allen@example.com', '2025-01-10'),
+('Chloe Hill', 25, '444 Willow Ct, Eastwood', '7890123456', 'chloe.hill@example.com', '2025-01-10'),
+('Daniel Scott', 39, '555 Beech St, Lakeview', '8901234567', 'daniel.scott@example.com', '2025-01-10'),
+('Sofia Adams', 21, '666 Cedar Ridge, Westfield', '9012345678', 'sofia.adams@example.com', '2025-01-10'),
+('Matthew Baker', 35, '777 Alder Rd, Crestview', '1122334455', 'matthew.baker@example.com', '2025-01-10'),
+('Isabella Carter', 33, '888 Cherry St, Parkview', '2233445566', 'isabella.carter@example.com', '2025-01-10');
+
+# ADD data 
+
+INSERT INTO users (name, age, address, phone_number, email, registration_date) VALUES
+('Vootla Sai Charan', 27, 'bengaluru Elm St, Springfield', '9876543210', 'test@gmail.com', '2024-12-01');
+
+# delete data
+DELETE FROM users WHERE id = 1;
+
+# update data
+UPDATE users SET name = 'Alice Smith', age = 30, address = '123 Elm St' WHERE id = 2;
