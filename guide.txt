@@ -1,0 +1,27 @@
+1. install mysql
+
+2. enter in to the MySQL database --> sudo mySQL [we will be having a default user called root in mysql database]
+
+3. add password to the database
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+FLUSH PRIVILEGES;
+exit
+
+4. sudo mySQL -u root -p
+   show databases;
+   create database charandb;
+   use charandb;
+   create a table -- show tables;
+   select * from users;
+   insert the data -- 
+   select * from users; -- exit
+
+5. clone the application 
+   npm and nodejs install 
+
+6. install packages
+   npm install 
+
+before starting edit the server.js file add host: 'localhost' and user: 'root'
+7. to start application 
+   npm start
