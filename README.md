@@ -58,3 +58,15 @@ Now you have Node.js, npm, and MySQL installed on your Ubuntu system.
     ```sh
     sudo dnf install mysql-community-server -y
     ```
+    -If  You can start the MySQL service 
+    ```sh
+    sudo systemctl start mysqld
+    ```
+    - If You can enable the MySQL service to start at boot time
+    ```sh
+    sudo systemctl enable mysqld
+    ```
+    - If You can check the MySQL service status
+    ```sh 
+    sudo systemctl status mysqld
+    ```
