@@ -26,5 +26,5 @@ before starting edit the server.js file add host: 'localhost' and user: 'root'
 7. to start application 
    npm start
 
-to connect to the rds database
+8. to connect to the rds database
 sudo mysql -h <rds-end-point> -u <username> -p
