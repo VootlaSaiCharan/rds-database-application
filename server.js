@@ -6,8 +6,8 @@ const port = 3000;
 
 // Create connection to the database
 const db = mysql.createConnection({
-    host: 'database-1.c7w0uas0gj36.us-east-1.rds.amazonaws.com',
-    user: 'admin',
+    host: 'my-first-database.c7w0uas0gj36.us-east-1.rds.amazonaws.com', // replace with your RDS endpoint
+    user: 'root',
     password: 'password', // Replace with your actual password
     database: 'charandb', // Replace with your actual database name
     port: 3306
