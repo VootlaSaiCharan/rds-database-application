@@ -1,4 +1,9 @@
 1. install mysql
+In amazon linux server
+sudo dnf install mariadb105
+
+In Ubuntu
+sudo apt install mysql-client
 
 2. enter in to the MySQL database --> sudo mySQL [we will be having a default user called root in mysql database]
 
@@ -29,7 +34,7 @@ before starting edit the server.js file add host: 'localhost' and user: 'root'
 ### create RDS Database
 How To create RDS Database
 RDS --> database --> create database --> standard create --> mysql --> mysql 8.0.23 --> template (free tier) --> enter password --> DB Class (db.t2.micro) --> gp2 (20gb) --> enable auto storage --> (vpc) optional
---> public access (yes) --> security group (create new)/ use existance --> Port (3306) --> password authentication --> create database.
+--> public access (yes) --> security group (create new)/ use existance --> Port (3306) --> Plz uncheck autobackups --> password authentication --> create database.
 
 8. to connect to the rds database
    make sure to enable 3306 in security group to connect to rds 
