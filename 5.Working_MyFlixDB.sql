@@ -298,6 +298,9 @@ is because Engine.execute() has been deprecated and removed in SQLAlchemy 2.0. I
 -- Windows
 Install PIP in windows 
 https://bootstrap.pypa.io/get-pip.py  -- save as a file get-pip.py
+python -m venv .venv
+pip install sqlalchemy
+pip install pymysql
 
 
 import sqlalchemy as sal
