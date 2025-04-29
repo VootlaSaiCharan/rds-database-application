@@ -39,3 +39,11 @@ RDS --> database --> create database --> standard create --> mysql --> mysql 8.0
 8. to connect to the rds database
    make sure to enable 3306 in security group to connect to rds 
    sudo mysql -h <rds-end-point> -u <username> -p
+
+
+
+How To create RDS Database with 2 instances using Production
+
+RDS --> database --> create database --> standard create --> mysql --> mysql 8.0.40 --> template (Multi-AZ DB instance deployment (2 instances) --> database name --> Self managed --> enter password --> Burstable classes (includes t classes) (db.t3.micro) --> gp2 (20gb) --> Additional storage configuration (uncheck - Enable storage autoscaling) --> (vpc) optional --> DB subnet group --> Public access (yes) --> Select SG (remove default) --> uncheck - Enable Enhanced monitoring --> Additional configuration -- uncheck - Enable automated backups --> Deletion protection --> uncheck - Enable deletion protection --> create database.
+
+
